@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c3p0-config>
+	<!-- 默认配置 -->
+	<default-config>
+		<property name="jdbcUrl">jdbc:mysql://localhost:3306/xinqi</property>
+		<property name="driverClass">com.mysql.jdbc.Driver</property>
+		<property name="user">root</property>
+		<property name="password">root</property>
+		<!-- 初始化数目 -->
+		<property name="initialPoolSize">3</property>
+		<!-- 最大连接数 -->
+		<property name="maxPoolSize">6</property>
+		<!-- 最大空闲时间,1000秒内未使用则连接被丢弃。若为0则永不丢弃。Default: 0 -->
+		<property name="maxIdleTime">1000</property>
+	</default-config>	
+</c3p0-config>
